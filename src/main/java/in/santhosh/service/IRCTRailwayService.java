@@ -1,8 +1,9 @@
 package in.santhosh.service;
 
-import org.springframework.stereotype.Service;
+import in.santhosh.exception.PosidexException;
 
-@Service
-public class IRCTRailwayService {
+public interface IRCTRailwayService {
+	
+	public int getResponse(String requestId, String from, String to, String trainNumber, String trainName) throws PosidexException;
 
 }
